@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+void prototypeFunction ();	
+float total_pembelian, diskon, total_belanja;
+float uang_konsumen;
+
+
+int main ()
+{
+	prototypeFunction ();
+}
+void prototypeFunction ()
+{
+
+
+	cout << "Nama : M.Riski Saputra" << endl;
+	cout << "NIM : ETE101910102" << endl;
+	cout << "Coding C++"<<endl;
+	cout << "UAS PRAK. BAHASA PEMROGRAMAN"<< endl;
+	cout << "Masukkan total pembelian " << endl;
+	cin >> total_pembelian;
+	diskon = 0;
+	if (total_pembelian > 500000);
+	{
+	diskon = 0.1 * total_pembelian;
+	}
+total_belanja = total_pembelian - diskon;
+cout << "Diskon Total =" << diskon << endl;
+cout << "Total Belanja =" << total_belanja << endl;
+cout << "Masukkan Uang konsumen ="<< endl;
+cin >> uang_konsumen;
+if ( total_pembelian > uang_konsumen )
+{
+	cout << "Kada cukup Mang ae "<<endl;
+	cout << "Tahutang lah" << endl;
+	cout << "Duit Pian Kurang" << endl;
+	cin >> uang_konsumen;}
+	cout << "Kembalian =" << uang_konsumen-total_pembelian;
+	
+}
